@@ -1,0 +1,117 @@
+@import "../../colors";
+@import "../../mixins";
+@import "../../placeholders";
+.team-members {
+  background: map-get($colors-webstudio, "team-section");
+
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+.team-members__title {
+  @extend %titles;
+
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  letter-spacing: 0.84px;
+  line-height: normal;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.team-members__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin-top: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}
+.team-members__team-content {
+  border-radius: 0px 0px 4px 4px;
+  background: rgb(255, 255, 255);
+
+  text-align: center;
+  padding-bottom: 30px;
+  padding-bottom: 24px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+.team-members__team-content:hover {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.team-members__img {
+  width: 450px;
+  height: 460px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
+}
+.team-members__name-title {
+  color: map-get($colors-webstudio, "main-titles-links");
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 3%;
+  text-align: center;
+
+  margin: 30px 0 10px 0;
+}
+.team-members__descr {
+  color: map-get($colors-webstudio, "sub-color");
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 3%;
+  text-align: center;
+
+  margin: 10px 0 16px 0;
+}
+.team-members__socmedia {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-members__socmedia-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-members__socmedia-link:hover {
+  background-color: map-get($colors-webstudio, "main-hovers");
+}
+.team-members__icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-members__socmedia-link:hover .team-members__icon {
+  fill: #ffffff;
+}

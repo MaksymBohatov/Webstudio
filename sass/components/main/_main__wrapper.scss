@@ -1,0 +1,120 @@
+@import "../../colors";
+@import "../../mixins";
+@import "../../placeholders";
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  gap: 0;
+
+  @media screen and (min-width: 1200px) {
+    gap: 94px;
+    padding: 94px 0;
+  }
+}
+.features__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.features__content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: start;
+  }
+}
+.features__title {
+  color: map-get($colors-webstudio, "main-titles-links");
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-align: left;
+  text-transform: uppercase;
+
+  margin: 30px 0 10px 0;
+}
+.features__descr {
+  color: map-get($colors-webstudio, "sub-color");
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3%;
+
+  width: 450px;
+  height: 50px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    max-height: 72px;
+    text-align: left;
+  }
+}
+.features__icon {
+  padding: 25px 100px;
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  background: map-get($colors-webstudio, "background-one");
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.activity__content {
+  display: none;
+  flex-direction: column;
+
+  gap: 50px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.activity__title {
+  @extend %titles;
+}
+.activity__photos {
+  display: flex;
+  gap: 30px;
+}
+.activity__photo {
+  width: 370px;
+  height: 294px;
+}
+.activity__photo-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.activity__photo-descr {
+  position: absolute;
+  bottom: 0;
+  padding: 27px 0;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}

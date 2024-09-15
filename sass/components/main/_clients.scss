@@ -1,0 +1,62 @@
+@import "../../colors";
+@import "../../mixins";
+@import "../../placeholders";
+.clients {
+  background: map-get($colors-webstudio, "background-two");
+}
+.clients__content {
+  @include flex($direction: column);
+
+  padding: 60px 0;
+  gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 50px;
+    padding: 94px 0;
+  }
+}
+.clients__title {
+  color: map-get($colors-webstudio, "title-one");
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.84px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
+}
+.clients__logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.clietns__logo {
+  width: 210px;
+  padding: 16px 52px;
+
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    padding: 16px 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    padding: 16px 32px;
+  }
+}
+.clietns__logo:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}

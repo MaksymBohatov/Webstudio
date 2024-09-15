@@ -1,0 +1,21 @@
+@import "./colors";
+%titles {
+  color: map-get($colors-webstudio, "main-titles-links");
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-align: center;
+}
+%footer-titles {
+  color: map-get($colors-webstudio, "footer-txt");
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+@import './colors-portfolio';
+%footer-titles {
+  color: map-get($colors-portfolio, 'sub-color' );
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
