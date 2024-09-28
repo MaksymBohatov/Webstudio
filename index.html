@@ -154,27 +154,48 @@
               <h2 class="activity__title">Чим ми займаємося</h2>
               <div class="activity__photos">
                 <div class="activity__photo-wrapper">
-                  <img
-                    src="./images/programmer.png"
-                    alt="програміст"
-                    class="activity__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/programmer@desktop-1x.png 1x,
+                        ./images/desktop/programmer@desktop-2x.png 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/desktop/programmer@desktop-1x.png 1x"
+                      alt="програміст"
+                      class="activity__photo"
+                    />
+                  </picture>
                   <p class="activity__photo-descr">Десктопні додатки</p>
                 </div>
                 <div class="activity__photo-wrapper">
-                  <img
-                    src="./images/manager.png"
-                    alt="веб-дизайнер"
-                    class="activity__photo"
-                  />
+                  <picture>
+                    <source
+                    srcset="./images/desktop/mobile-apps@desktop-1x.png 1x, ./images/desktop/mobile-apps@desktop-2x.png 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <img
+                      src="./images/desktop/mobile-apps@desktop-1x.png"
+                      alt="веб-дизайнер"
+                      class="activity__photo"
+                    />
+                  </picture>
                   <p class="activity__photo-descr">Мобільні додатки</p>
                 </div>
                 <div class="activity__photo-wrapper">
-                  <img
-                    src="./images/ui-designer.png"
-                    alt="дизайнер інтерфейсу"
-                    class="activity__photo"
-                  />
+                  <picture>
+                    <source
+                    srcset="./images/desktop/design-solutions@desktop-1x.png 1x, ./images/desktop/design-solutions@desktop-2x.png 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <img
+                      src="./images/desktop/design-solutions@desktop-1x.png"
+                      alt="дизайнер інтерфейсу"
+                      class="activity__photo"
+                    />
+                  </picture>
                   <p class="activity__photo-descr">Дизайнерські рішення</p>
                 </div>
               </div>
@@ -187,11 +208,26 @@
           <h2 class="team-members__title">Наша команда</h2>
           <div class="team-members__wrapper">
             <div class="team-members__team-content">
-              <img
-                class="team-members__img"
-                src="./images/product-designer.jpeg"
-                alt="продукт дизайнер"
-              />
+              <picture>
+                <source
+                srcset="./images/mobile/product-designer@mobile-1x.jpg 1x, ./images/mobile/product-designer@mobile-2x.jpg 2x"
+                media="(min-width: 480px)"
+                >
+                <source
+                srcset="./images/tablet/product-designer@tablet-1x.jpg 1x, ./images/tablet/product-designer@tablet-2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/desktop/product-designer@desktop-1x.jpg 1x, ./images/desktop/product-designer@desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <img
+                  class="team-members__img"
+                  src="./images/mobile/product-designer@mobile-1x.jpg"
+                  alt="продукт дизайнер"
+                />
+              </picture>
+             
               <h3 class="team-members__name-title">Ігор Дем'яненко</h3>
               <h5 class="team-members__descr">Product Designer</h5>
               <div class="team-members__socmedia">
@@ -228,11 +264,25 @@
               </div>
             </div>
             <div class="team-members__team-content">
-              <img
-                class="team-members__img"
-                src="./images/frontend-developer.jpeg"
-                alt="фронтенд розробник"
-              />
+              <picture>
+                <source
+                srcset="./images/mobile/frontend-developer@mobile-1x.jpg 1x, ./images/mobile/frontend-developer@mobile-2x.jpg 2x"
+                media="(min-width: 480px)"
+                >
+                <source
+                srcset="./images/tablet/frontend-devolper@tablet-1x.jpg 1x, ./images/tablet/frontend-devolper@tablet-2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/desktop/frontend-developer@desktop-1x.jpg 1x, ./images/desktop/frontend-developer@desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <img
+                  class="team-members__img"
+                  src="./images/mobile/frontend-developer@mobile-1x.jpg"
+                  alt="фронтенд розробник"
+                />
+              </picture>
               <h3 class="team-members__name-title">Ольга Рєпіна</h3>
               <h5 class="team-members__descr">Frontend Developer</h5>
               <div class="team-members__socmedia">
@@ -269,11 +319,26 @@
               </div>
             </div>
             <div class="team-members__team-content">
-              <img
-                class="team-members__img"
-                src="./images/marketing.jpeg"
-                alt="маркетолог"
-              />
+              <picture>
+                <source
+                srcset="./images/mobile/marketing@mobile-1x.jpg 1x, ./images/mobile/marketing@mobile-2x.jpg 2x"
+                media="(min-width: 480px)"
+                >
+                <source
+                srcset="./images/tablet/marketing@tablet-1x.jpg 1x, ./images/tablet/marketing@tablet-2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/desktop/marketing@desktop-1x.jpg 1x, ./images/desktop/marketing@desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <img
+                  class="team-members__img"
+                  src="./images/mobile/marketing@mobile-1x.jpg"
+                  alt="маркетолог"
+                />
+              </picture>
+             
               <h3 class="team-members__name-title">Микола Тарасов</h3>
               <h5 class="team-members__descr">Marketing</h5>
               <div class="team-members__socmedia">
@@ -310,11 +375,26 @@
               </div>
             </div>
             <div class="team-members__team-content">
-              <img
-                class="team-members__img"
-                src="./images/ui-designer.jpeg"
-                alt="дизайнер інтерфейсу"
-              />
+              <picture>
+              <source
+              srcset="./images/mobile/designer@mobile-1x.jpg 1x, ./images/mobile/designer@mobile-2x.jpg 2x"
+              media="(min-width: 480px)"
+              >                
+              <source
+              srcset="./images/tablet/designer@tablet-1x.jpg 1x, ./images/tablet/designer@tablet-2x.jpg 2x"
+              media="(min-width: 768px)"
+              >
+              <source
+              srcset="./images/desktop/designer@desktop-1x.jpg 1x, ./images/desktop/designer@desktop-2x.jpg 2x"
+              media="(min-width: 1200px)"
+              >
+                <img
+                  class="team-members__img"
+                  src="./images/mobile/designer@mobile-1x.jpg"
+                  alt="дизайнер інтерфейсу"
+                />
+              </picture>
+             
               <h3 class="team-members__name-title">Михайло Єрмаков</h3>
               <h5 class="team-members__descr">UI Designer</h5>
               <div class="team-members__socmedia">
